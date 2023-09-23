@@ -30,6 +30,7 @@
 \usepackage{caption}
 \usepackage{color}
 \usepackage{xcolor}
+\usepackage{forest}
 
 \urlstyle{rm}
 
@@ -111,10 +112,8 @@
 
 %%% NOTE:  Replace 'NAME HERE' etc., and delete any "\red{}" wrappers (so it won't show up as red)
 
-\author{
-\$>>$Dario Placencio$<<$\\
-\$>>$907 284 6018$<<$\\
-} 
+\author{Dario Placencio\\
+\texttt{907 284 6018}}
 
 \date{}
 
@@ -122,9 +121,12 @@
 
 \maketitle 
 
-
 \textbf{Instructions:} 
 Use this latex file as a template to develop your homework. Submit your homework on time as a single pdf file to Canvas. Please wrap your code and upload to a public GitHub repo, then attach the link below the instructions so that we can access it. You can choose any programming language (i.e. python, R, or MATLAB), as long as you implement the algorithm from scratch (e.g. do not use sklearn on questions 1 to 7 in section 2). Please check Piazza for updates about the homework.
+
+\begin{itemize}
+  \item The Jupyter Noteebok userd for this homework can be found on this link: \url{
+\end{itemize}
 
 \section{A Simplified Decision Tree}
 You are to implement a decision-tree learner for classification.
@@ -204,21 +206,39 @@ For the root node, considering the candidate cuts on the dataset \texttt{Druns.t
     \item For a threshold of \(8.0\), the Information Gain (IG) is \(0.1891\).
 \end{itemize}
 
-From the above results, we observe that the highest Gain Ratio (GR) is \(0.2361\) for a threshold of \(6.0\) on Feature 2. This would be the most promising candidate cut for the root node. However, it is essential to note that there are instances where the Gain Ratio (GR) is not computed due to the split entropy being zero, and instead, the Information Gain (IG) is provided.
+From the above results, we observe that the highest Gain Ratio (GR) is \(0.2361\) for a threshold of \(6.0\) on Feature 2. This would be the most promising candidate cut for the root node. It's important to note the instances where the Gain Ratio (GR) is not computed due to the split entropy being zero, and instead, the Information Gain (IG) was calculated.
 
 \item (The king of interpretability)  [10 pts] Decision tree is not the most accurate classifier in general.  However, it persists.  This is largely due to its rumored interpretability: a data scientist can easily explain a tree to a non-data scientist.  Build a tree from D3leaves.txt.  Then manually convert your tree to a set of logic rules.  Show the tree\footnote{When we say show the tree, we mean either the standard computer science tree view, or some crude plaintext representation of the tree -- as long as you explain the format.  When we say visualize the tree, we mean a plot in the 2D $\x$ space that shows how the tree will classify any points.} and the rules. \\
 
-x1 >= 2.0
-|   1
-|   x2 >= 3.0
-|   |   1
-|   |   0
+\begin{forest}
+  for tree={
+    grow=east,
+    parent anchor=east,
+    child anchor=west,
+    anchor=west,
+    calign=edge midpoint,
+    inner sep=2pt,
+    outer sep=1pt,
+    edge={line width=0.7pt},
+    if n children=0{tier=terminus}{}
+  }
+  [\(x_1 \geq 2.0\)
+    [1]
+    [\(x_2 \geq 3.0\)
+      [1]
+      [0]
+    ]
+  ]
+\end{forest}
 
 Rules of the Tree:
 
-- IF $(x_1 \geq 2.0)$ THEN class = 1
-- IF $(x_1 < 2.0)$ AND $(x_2 \geq 3.0)$ THEN class = 1
-- IF $(x_1 < 2.0)$ AND $(x_2 < 3.0)$ THEN class = 0
+\begin{enumerate}
+  \item IF $(x_1 \geq 2.0)$ THEN class = 1
+  \item IF $(x_1 < 2.0)$ AND $(x_2 \geq 3.0)$ THEN class = 1
+  \item IF $(x_1 < 2.0)$ AND $(x_2 < 3.0)$ THEN class = 0
+\end{enumerate}
+
 
 \item (Or is it?)  [10 pts] For this question only, make sure you DO NOT VISUALIZE the data sets or plot your tree's decision boundary in the 2D $\x$ space.  If your code does that, turn it off before proceeding.  This is because you want to see your own reaction when trying to interpret a tree.  You will get points no matter what your interpretation is.
 And we will ask you to visualize them in the next question anyway.
@@ -226,16 +246,23 @@ And we will ask you to visualize them in the next question anyway.
   
   \item Build a decision tree on D1.txt.  Show it to us in any format (e.g. could be a standard binary tree with nodes and arrows, and denote the rule at each leaf node; or as simple as plaintext output where each line represents a node with appropriate line number pointers to child nodes; whatever is convenient for you). Again, do not visualize the data set or the tree in the $\x$ input space.  In real tasks you will not be able to visualize the whole high dimensional input space anyway, so we don't want you to ``cheat'' here. 
   
-  x2 >= 0.201829
-|   1
-|   0
+  \begin{forest}
+    [\(x^2 \geq 0.201829\)
+      [1]
+      [0]
+    ]
+  \end{forest}
 
   \item Look at your tree in the above format (remember, you should not visualize the 2D dataset or your tree's decision boundary) and try to interpret the decision boundary in human understandable English. 
-  
-  From the decision tree built on D1.txt, only a single split is made, with the rule being:
 
-  - If X2 is greater than or equal to 0.201829, then the class is 1.
-  - If X2 is less than 0.201829, then the class is 0.
+From the decision tree built on D1.txt, only a single split is made, with the rule being:
+
+% reset enumerate counter
+\setcounter{enumi}{0}
+\begin{enumerate}
+  \item If X2 is greater than or equal to 0.201829, then the class is 1.
+  \item If X2 is less than 0.201829, then the class is 0.
+\end{enumerate}
   
 Regarding the decision boundary is difficult to interpret the total lack of knowledge of the magnitude of the features. However, I'm integred of why ended being a decimal number the threshold for the split.
 
@@ -245,43 +272,45 @@ Regarding the decision boundary is difficult to interpret the total lack of know
   
   \end{itemize}
 
-  x1 >= 0.532684
-  |   x2 >= 0.228007
-  |   |   x2 >= 0.424906
-  |   |   |   1
-  |   |   |   x2 >= 0.421367
-  |   |   |   |   0
-  |   |   |   |   x2 >= 0.234851
-  |   |   |   |   |   x2 >= 0.410302
-  |   |   |   |   |   |   1
-  |   |   |   |   |   |   x2 >= 0.405307
-  |   |   |   |   |   |   |   0
-  |   |   |   |   |   |   |   x2 >= 0.383738
-  |   |   |   |   |   |   |   |   1
-  |   |   |   |   |   |   |   |   x2 >= 0.380214
-  |   |   |   |   |   |   |   |   |   0
-  |   |   |   |   |   |   |   |   |   x2 >= 0.367848
-  |   |   |   |   |   |   |   |   |   |   1
-  |   |   |   |   |   |   |   |   |   |   x2 >= 0.365809
-  |   |   |   |   |   |   |   |   |   |   |   0
-  |   |   |   |   |   |   |   |   |   |   |   x2 >= 0.357304
-  |   |   |   |   |   |   |   |   |   |   |   |   1
-  |   |   |   |   |   |   |   |   |   |   |   |   x2 >= 0.351951
-  |   |   |   |   |   |   |   |   |   |   |   |   |   0
-  |   |   |   |   |   |   |   |   |   |   |   |   |   x2 >= 0.341365
-  |   |   |   |   |   |   |   |   |   |   |   |   |   |   1
+  \begin{forest}
+    for tree={
+      grow'=0,
+      parent anchor=south,
+      child anchor=north,
+      anchor=north,
+      align=center,
+      l sep=2cm,
+      edge={-latex, line width=0.5pt}, % Adjust the line width as needed
+    }
+    [\(x_1 \geq 0.532684\)
+      [\(x_2 \geq 0.228007\)
+        [1]
+        [0]
+      ]
+      [\(x_2 \geq 0.037708\)
+        [\(x_2 \geq 0.045827\)
+          [1]
+          [0]
+        ]
+        [1]
+      ]
+    ]
+  \end{forest}
 
-So, this case is the totally of oposit, with 14 splits being made. From here I could suggest that the data is less sensitive to minor changes in X1, but more for x2, hence the need for more splits. However, I'm not sure if this is the case, without visualizing the data, so it's difficult to interpret the decision tree. 
+  So, this case is the totally of oposit, with many splits being made. From here I could suggest that the tree is more complex, and sensitive to the features, hence the need for more splits. However, I'm not sure if this is the case, without visualizing the data, so it's difficult to interpret the decision tree.
 
-\item (Hypothesis space)  [10 pts] For D1.txt and D2.txt, do the following separately:
+  \item (Hypothesis space)  [10 pts] For D1.txt and D2.txt, do the following separately:
   \begin{itemize}
   
   \item Produce a scatter plot of the data set.
 
   \item Visualize your decision tree's decision boundary (or decision region, or some other ways to clearly visualize how your decision tree will make decisions in the feature space).
 
+  \item Then discuss why the size of your decision trees on D1 and D2 differ.  Relate this to the hypothesis space of our decision tree algorithm. \\
+
   \end{itemize}
-Then discuss why the size of your decision trees on D1 and D2 differ.  Relate this to the hypothesis space of our decision tree algorithm. \\
+
+It can be observed the difference in complexity for D2 compared to D1, the distribution of the labels on D1 makes the tree quite simple, considering the strong effect of X2 on the label. On the case of D2 is the oposit, the distribution of the labels is more complex, and the effect of X1 and X2 is not as strong as in D1, hence the need for more splits.  
 
 \item (Learning curve)  [20 pts] We provide a data set Dbig.txt with 10000 labeled items.  Caution: Dbig.txt is sorted.
   \begin{itemize}
@@ -304,8 +333,13 @@ Fix some interval $[a, b]$ and sample $n = 100$ points $x$ from this interval un
 
 Build a model $f$ by using Lagrange interpolation, check more details in \url{https://en.wikipedia.org/wiki/Lagrange_polynomial} and \url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.lagrange.html}. \\
 
-Generate a test set using the same distribution as your test set. Compute and report the resulting model’s train and test error. What do you observe?
-Repeat the experiment with zero-mean Gaussian noise $\epsilon$ added to $x$. Vary the standard deviation for $\epsilon$ and report your findings.
+Generate a test set using the same distribution as your test set. Compute and report the resulting model’s train and test error. What do you observe?\\
+
+From the test errors it can be observed an incredible size of the magnitude of the errors, almost astronomaically large, but it might be the  nature of the interpolation method with a big number of points.\\
+
+Repeat the experiment with zero-mean Gaussian noise $\epsilon$ added to $x$. Vary the standard deviation for $\epsilon$ and report your findings.\\
+
+The magnitudes are still very large, but this is based on the nature of the function, and the interpolation method. But now the values are different between train and test, and the relationship with the standard deviation is positive, more deviation, more error.
 
 \bibliographystyle{apalike}
 \end{document}
