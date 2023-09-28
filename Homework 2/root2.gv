@@ -1,0 +1,125 @@
+digraph {
+	root [label="Feature 0 >= 0.533076"]
+	0 [label="Feature 0 >= 0.533076"]
+	root -> 0
+	1 [label="Feature 1 >= 0.228007"]
+	0 -> 1
+	1 [label="Feature 1 >= 0.424906"]
+	1 -> 1
+	1 [label="Predict 1"]
+	1 -> 1
+	0 [label="Feature 0 >= 0.708127"]
+	1 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	1 [label="Feature 1 >= 0.32625"]
+	0 -> 1
+	0 [label="Feature 0 >= 0.595471"]
+	1 -> 0
+	0 [label="Feature 0 >= 0.646007"]
+	0 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	1 [label="Feature 1 >= 0.403494"]
+	0 -> 1
+	1 [label="Predict 1"]
+	1 -> 1
+	0 [label="Predict 0"]
+	1 -> 0
+	0 [label="Predict 0"]
+	0 -> 0
+	0 [label="Predict 0"]
+	1 -> 0
+	0 [label="Feature 0 >= 0.887224"]
+	1 -> 0
+	1 [label="Feature 1 >= 0.037708"]
+	0 -> 1
+	1 [label="Feature 1 >= 0.082895"]
+	1 -> 1
+	1 [label="Predict 1"]
+	1 -> 1
+	0 [label="Feature 0 >= 0.960783"]
+	1 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	0 [label="Predict 0"]
+	0 -> 0
+	0 [label="Predict 0"]
+	1 -> 0
+	0 [label="Feature 0 >= 0.850316"]
+	0 -> 0
+	1 [label="Feature 1 >= 0.169053"]
+	0 -> 1
+	1 [label="Predict 1"]
+	1 -> 1
+	0 [label="Predict 0"]
+	1 -> 0
+	0 [label="Predict 0"]
+	0 -> 0
+	1 [label="Feature 1 >= 0.88635"]
+	0 -> 1
+	0 [label="Feature 0 >= 0.041245"]
+	1 -> 0
+	0 [label="Feature 0 >= 0.104043"]
+	0 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	0 [label="Feature 0 >= 0.07642"]
+	0 -> 0
+	0 [label="Predict 0"]
+	0 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	0 [label="Predict 0"]
+	0 -> 0
+	1 [label="Feature 1 >= 0.691474"]
+	1 -> 1
+	0 [label="Feature 0 >= 0.254049"]
+	1 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	0 [label="Feature 0 >= 0.191915"]
+	0 -> 0
+	1 [label="Feature 1 >= 0.792752"]
+	0 -> 1
+	1 [label="Predict 1"]
+	1 -> 1
+	0 [label="Predict 0"]
+	1 -> 0
+	1 [label="Feature 1 >= 0.864128"]
+	0 -> 1
+	0 [label="Feature 0 >= 0.144781"]
+	1 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	0 [label="Predict 0"]
+	0 -> 0
+	0 [label="Predict 0"]
+	1 -> 0
+	1 [label="Feature 1 >= 0.534979"]
+	1 -> 1
+	0 [label="Feature 0 >= 0.426073"]
+	1 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	0 [label="Feature 0 >= 0.409972"]
+	0 -> 0
+	0 [label="Feature 0 >= 0.417579"]
+	0 -> 0
+	0 [label="Predict 0"]
+	0 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	0 [label="Feature 0 >= 0.393227"]
+	0 -> 0
+	0 [label="Feature 0 >= 0.39583"]
+	0 -> 0
+	0 [label="Predict 0"]
+	0 -> 0
+	1 [label="Predict 1"]
+	0 -> 1
+	0 [label="Predict 0"]
+	0 -> 0
+	0 [label="Predict 0"]
+	1 -> 0
+}

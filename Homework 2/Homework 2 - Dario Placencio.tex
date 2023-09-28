@@ -177,11 +177,11 @@ Given our decision tree's stopping criterion, if the entropy of a node is \(0\),
 Importantly, if we were to manually force a split, the algorithm will happily continue splitting the data set further and produce a deeper tree with zero training error.
 You should (1) plot your training set, (2) explain why.  Hint: you don't need more than a handful of items. \\
 
-In the plotted training set, we have the two classes (`0` and `1`). Initially, if our algorithm tries to split based on the best information gain (or gain ratio), it would find that there's no effective split to separate the classes at the root since they're intertwined. Thus, the algorithm might refuse to split and decide to make the root a leaf.
+In this specially created dataset, we have two groups labeled as 0 and 1, but if we look at the values of our features, there's no easy way to separate these groups with just one question (split). The data points are all mixed up, and there's no obvious first question we can ask to neatly separate the groups.\\
 
-However, if we manually force a split (say, \( x1 < 3 \)), then the algorithm can further split the data to produce a deeper tree. For the left child node with data points \{(1,1,0), (2,2,0)\}, a further split on \( x1 \) can perfectly separate these two points, and similarly for the right child node with data points \{(3,3,1), (4,4,1)\}.
+The Decision Tree algorithm wants to ask questions to figure things out. However, when it looks at this data, it can't find a good first question to start with. So, it stops at the very beginning, and will make the root node a leaf.\\
 
-This example illustrates that the greedy approach of decision trees, which relies solely on metrics like information gain or gain ratio, may not always find the optimal tree, especially when the decision boundaries are not straightforward.
+If we manually force a split at any feature, the algorithm will continue splitting the data further, producing a deeper tree with zero training error, but it will still start as a leaf node if no informative split is found at the root, like on this case.\\
 
 \item (Information gain ratio exercise)  [10 pts] Use the training set Druns.txt.  For the root node, list all candidate cuts and their information gain ratio. If the entropy of the candidate split is zero, please list its mutual information (i.e. information gain). Hint: to get $\log_2(x)$ when your programming language may be using a different base, use \verb|log(x)/log(2)|. Also, please follow the split rule in the first section. \\
 
@@ -189,24 +189,30 @@ For the root node, considering the candidate cuts on the dataset \texttt{Druns.t
 
 \textbf{For Feature 1 (x1):}
 \begin{itemize}
-    \item For a threshold of \(0.1\), the Information Gain (IG) is \(0.0442\).
+    \item Threshold \(0.0\): Mutual Information = \(0.0\)
+    \item Threshold \(0.1\): Gain Ratio = \(0.1005\)
 \end{itemize}
 
 \textbf{For Feature 2 (x2):}
 \begin{itemize}
-    \item For a threshold of \(-1.0\), the Information Gain (IG) is \(0.0442\).
-    \item For a threshold of \(0.0\), the Gain Ratio (GR) is \(0.0560\).
-    \item For a threshold of \(1.0\), the Gain Ratio (GR) is \(0.0058\).
-    \item For a threshold of \(2.0\), the Gain Ratio (GR) is \(0.0011\).
-    \item For a threshold of \(3.0\), the Gain Ratio (GR) is \(0.0164\).
-    \item For a threshold of \(4.0\), the Gain Ratio (GR) is \(0.0497\).
-    \item For a threshold of \(5.0\), the Gain Ratio (GR) is \(0.1112\).
-    \item For a threshold of \(6.0\), the Gain Ratio (GR) is \(0.2361\).
-    \item For a threshold of \(7.0\), the Gain Ratio (GR) is \(0.0560\).
-    \item For a threshold of \(8.0\), the Information Gain (IG) is \(0.1891\).
+    \item Threshold \(-2.0\): Mutual Information = \(0.0\)
+    \item Threshold \(-1.0\): Gain Ratio = \(0.1005\)
+    \item Threshold \(0.0\): Gain Ratio = \(0.0560\)
+    \item Threshold \(1.0\): Gain Ratio = \(0.0058\)
+    \item Threshold \(2.0\): Gain Ratio = \(0.0011\)
+    \item Threshold \(3.0\): Gain Ratio = \(0.0164\)
+    \item Threshold \(4.0\): Gain Ratio = \(0.0497\)
+    \item Threshold \(5.0\): Gain Ratio = \(0.1112\)
+    \item Threshold \(6.0\): Gain Ratio = \(0.2361\)
+    \item Threshold \(7.0\): Gain Ratio = \(0.0560\)
+    \item Threshold \(8.0\): Gain Ratio = \(0.4302\)
 \end{itemize}
 
-From the above results, we observe that the highest Gain Ratio (GR) is \(0.2361\) for a threshold of \(6.0\) on Feature 2. This would be the most promising candidate cut for the root node. It's important to note the instances where the Gain Ratio (GR) is not computed due to the split entropy being zero, and instead, the Information Gain (IG) was calculated.
+There are two unique values for Feature 0 (x1) that were tested as potential splits. One of the splits (Threshold 0.0) had an entropy of 0 (meaning it was a perfect split for the data it was given) and thus its mutual information is listed.\\
+
+For feature 1 (x2) had many more unique values and hence more potential splits were tested. While most thresholds provided some amount of gain, the one at Threshold 8.0 offered the highest gain ratio of 0.4302, indicating that it might be the most informative split if you were to select the first split for a decision tree based purely on gain ratio.\\
+
+Similarly, for Feature 1 with Threshold -2.0, the entropy of the candidate split is 0, so mutual information is displayed.\\
 
 \item (The king of interpretability)  [10 pts] Decision tree is not the most accurate classifier in general.  However, it persists.  This is largely due to its rumored interpretability: a data scientist can easily explain a tree to a non-data scientist.  Build a tree from D3leaves.txt.  Then manually convert your tree to a set of logic rules.  Show the tree\footnote{When we say show the tree, we mean either the standard computer science tree view, or some crude plaintext representation of the tree -- as long as you explain the format.  When we say visualize the tree, we mean a plot in the 2D $\x$ space that shows how the tree will classify any points.} and the rules. \\
 
@@ -222,7 +228,7 @@ From the above results, we observe that the highest Gain Ratio (GR) is \(0.2361\
     edge={line width=0.7pt},
     if n children=0{tier=terminus}{}
   }
-  [\(x_1 \geq 2.0\)
+  [\(x_1 \geq 10.0\)
     [1]
     [\(x_2 \geq 3.0\)
       [1]
@@ -234,9 +240,9 @@ From the above results, we observe that the highest Gain Ratio (GR) is \(0.2361\
 Rules of the Tree:
 
 \begin{enumerate}
-  \item IF $(x_1 \geq 2.0)$ THEN class = 1
-  \item IF $(x_1 < 2.0)$ AND $(x_2 \geq 3.0)$ THEN class = 1
-  \item IF $(x_1 < 2.0)$ AND $(x_2 < 3.0)$ THEN class = 0
+  \item IF $(x_1 \geq 10.0)$ THEN class = 1
+  \item IF $(x_1 < 10.0)$ AND $(x_2 \geq 3.0)$ THEN class = 1
+  \item IF $(x_1 < 10.0)$ AND $(x_2 < 3.0)$ THEN class = 0
 \end{enumerate}
 
 
@@ -264,7 +270,7 @@ From the decision tree built on D1.txt, only a single split is made, with the ru
   \item If X2 is less than 0.201829, then the class is 0.
 \end{enumerate}
   
-Regarding the decision boundary is difficult to interpret the total lack of knowledge of the magnitude of the features. However, I'm integred of why ended being a decimal number the threshold for the split.
+Regarding the decision boundary is difficult to interpret the total lack of knowledge of the magnitude of the features. However, we can say that the decision boundary is a vertical line at X2 = 0.201829.
 
   \item Build a decision tree on D2.txt.  Show it to us. 
 
@@ -282,13 +288,13 @@ Regarding the decision boundary is difficult to interpret the total lack of know
       l sep=2cm,
       edge={-latex, line width=0.5pt}, % Adjust the line width as needed
     }
-    [\(x_1 \geq 0.532684\)
+    [\(x_1 \geq 0.533076\)
       [\(x_2 \geq 0.228007\)
         [1]
         [0]
       ]
-      [\(x_2 \geq 0.037708\)
-        [\(x_2 \geq 0.045827\)
+      [\(x_2 \geq 0.424906\)
+        [\(x_2 \geq 0.708127\)
           [1]
           [0]
         ]
@@ -296,6 +302,8 @@ Regarding the decision boundary is difficult to interpret the total lack of know
       ]
     ]
   \end{forest}
+
+  This is only a small portion of the tree, but it's enough to see the complexity of the tree. In the previous case, the tree was very simple, with only one split being made. The rest of the tree can be found on the code pages.\\
 
   So, this case is the totally of oposit, with many splits being made. From here I could suggest that the tree is more complex, and sensitive to the features, hence the need for more splits. However, I'm not sure if this is the case, without visualizing the data, so it's difficult to interpret the decision tree.
 
@@ -335,11 +343,11 @@ Build a model $f$ by using Lagrange interpolation, check more details in \url{ht
 
 Generate a test set using the same distribution as your test set. Compute and report the resulting model’s train and test error. What do you observe?\\
 
-From the test errors it can be observed an incredible size of the magnitude of the errors, almost astronomaically large, but it might be the  nature of the interpolation method with a big number of points.\\
+It can be observed that errors for train and test are relatively similar, but both have a considerable magnitude that might be the nature of the interpolation method, specially considering the big number of points used for the interpolation.\\
 
 Repeat the experiment with zero-mean Gaussian noise $\epsilon$ added to $x$. Vary the standard deviation for $\epsilon$ and report your findings.\\
 
-The magnitudes are still very large, but this is based on the nature of the function, and the interpolation method. But now the values are different between train and test, and the relationship with the standard deviation is positive, more deviation, more error.
+It can be observed that when Gaussian noise is introduced to the training data for Lagrange interpolation, the model's performance initially improves with moderate noise levels, likely due to noise acting as a regularizer and preventing overfitting. However, there's an optimal noise threshold (around a standard deviation of 10) beyond which the performance starts to decline. Essentially, a certain amount of noise can enhance the model's generalization, but excessive noise deteriorates its capability.
 
 \bibliographystyle{apalike}
 \end{document}
