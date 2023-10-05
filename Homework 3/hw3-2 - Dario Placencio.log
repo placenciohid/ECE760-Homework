@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.17)  4 OCT 2023 23:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.17)  5 OCT 2023 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -488,7 +488,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 \c@lemma=\count319
 \c@proposition=\count320
 \c@corollary=\count321
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 122.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 119.
  (C:\Users\dario\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -498,24 +498,24 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (hw3-2 - Dario Placencio.aux)
 \openout1 = `"hw3-2 - Dario Placencio.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -565,48 +565,26 @@ LaTeX Font Info:    ... okay on input line 122.
 \makeMPintoPDFobject=\count328
 \everyMPtoPDFconversion=\toks39
 )
-Package hyperref Info: Link coloring OFF on input line 122.
+Package hyperref Info: Link coloring OFF on input line 119.
 \@outlinefile=\write5
 \openout5 = `"hw3-2 - Dario Placencio.out"'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 125.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 122.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 125.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 122.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 125.
- (C:\Users\dario\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:125: Missing $ inserted.
-<inserted text> 
-                $
-l.125 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Overfull \hbox (34.9482pt too wide) in paragraph at lines 128--130
+[]\OT1/ptm/b/n/10 Github Repo: []$\OT1/ptm/m/n/10 https : / / github . com / placenciohid / ECE760-[]Homework / blob / a07d70fbccf8c85da945eb97a608062c0fa8b51a /
+ []
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:125: Missing $ inserted.
-<inserted text> 
-                $
-l.125 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:137: You can't use `macro parameter character #' in horizontal mode.
-l.137 ...e with 4 features each: (1) Profit, (2) #
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:139: You can't use `macro parameter character #' in horizontal mode.
+l.139 ...e with 4 features each: (1) Profit, (2) #
                                                    of Employyees, (3) Indust...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -617,274 +595,247 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 {C:/Users/dario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:224: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:226: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.224 		\end{align}
+l.226 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 232.
+(C:\Users\dario\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [2]
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:256: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:258: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.256 		\end{align}
+l.258 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (5.80612pt too wide) detected at line 257
+Overfull \hbox (5.80612pt too wide) detected at line 259
 [][]
  []
 
-[2]
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:275: Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.275 		\end{align}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (1.24948pt too wide) in paragraph at lines 284--285
-[]\OT1/ptm/m/n/10 (3pts) Now sup-pose that we wish to make a pre-dic-tion for a test ob-ser-va-tion by cre-at-ing a $\OML/cmm/m/it/10 p$\OT1/ptm/m/n/10 -dimensional
  []
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:291: Package amsmath Error: Erroneous nesting of equation structures;
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:277: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.291 		\end{align}
+l.277 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:302: Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.302 		\end{align}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (1.24948pt too wide) in paragraph at lines 289--290
+[]\OT1/ptm/m/n/10 (3pts) Now sup-pose that we wish to make a pre-dic-tion for a test ob-ser-va-tion by cre-at-ing a $\OML/cmm/m/it/10 p$\OT1/ptm/m/n/10 -dimensional
+ []
 
 [3]
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:312: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:296: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.312 		\end{align}
+l.296 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:342: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:307: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.342 		\end{align}
+l.307 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:355: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:317: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.355 		\end{align}
+l.317 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:368: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:347: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.368 		\end{align}
+l.347 		\end{align}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:360: Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.360 		\end{align}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:373: Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [4]
+<ROC Curve.png, id=52, 526.8483pt x 523.2348pt>
+File: ROC Curve.png Graphic file (type png)
+<use ROC Curve.png>
+Package pdftex.def Info: ROC Curve.png  used on input line 407.
+(pdftex.def)             Requested size: 227.62204pt x 226.05641pt.
 
-LaTeX Warning: File `ROC cur.png' not found on input line 402.
 
-
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:402: Package pdftex.def Error: File `ROC cur.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.402 		\includegraphics[width=8cm]{ROC cur.png}
-                                                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 402.
-(C:\Users\dario\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:438: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:445: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.438 		\end{align}
+l.445 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (21.21054pt too wide) detected at line 439
+Overfull \hbox (21.21054pt too wide) detected at line 446
 [][]
  []
 
-[5]
+[5 <./ROC Curve.png>]
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:454: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:461: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.454 		\end{align}
+l.461 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:462: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:469: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.462 		\end{align}
+l.469 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:472: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:479: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.472 		\end{align}
+l.479 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:483: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:490: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 		\end{align}
+l.490 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:497: Package amsmath Error: Erroneous nesting of equation structures;
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:504: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.497 		\end{align}
+l.504 		\end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [6]
+<D2z.png, id=71, 516.0078pt x 494.3268pt>
+File: D2z.png Graphic file (type png)
+<use D2z.png>
+Package pdftex.def Info: D2z.png  used on input line 520.
+(pdftex.def)             Requested size: 142.26378pt x 136.28348pt.
 
-LaTeX Warning: File `implementation1_expected_result.png' not found on input line 513.
-
-
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:513: Package pdftex.def Error: File `implementation1_expected_result.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.513 ...5cm]{implementation1_expected_result.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `email_head.png' not found on input line 519.
-
-
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:519: Package pdftex.def Error: File `email_head.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.519 ...raphics[width=\linewidth]{email_head.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:545: Undefined control sequence.
-l.545 				\toprule
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:548: Undefined control sequence.
+l.548 				\toprule
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -892,10 +843,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:547: Undefined control sequence.
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:550: Undefined control sequence.
 <recently read> \midrule 
                          
-l.547 				\midrule
+l.550 				\midrule
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -903,10 +854,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:553: Undefined control sequence.
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:556: Undefined control sequence.
 <recently read> \bottomrule 
                             
-l.553 				\bottomrule
+l.556 				\bottomrule
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -914,8 +865,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:564: Undefined control sequence.
-l.564 		\toprule
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:567: Undefined control sequence.
+l.567 		\toprule
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -923,10 +874,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:566: Undefined control sequence.
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:569: Undefined control sequence.
 <recently read> \midrule 
                          
-l.566 		\midrule
+l.569 		\midrule
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -934,10 +885,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:572: Undefined control sequence.
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:575: Undefined control sequence.
 <recently read> \bottomrule 
                             
-l.572 		\bottomrule
+l.575 		\bottomrule
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -945,52 +896,60 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[7]
+[7 <./D2z.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
 
-LaTeX Warning: File `knn.png' not found on input line 581.
+ []
 
-
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:581: Package pdftex.def Error: File `knn.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.581 		\includegraphics[width=8cm]{knn.png}
-                                            
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Accuracy vs K.png, id=81, 422.7795pt x 327.3831pt>
+<Accuracy vs K.png, id=85, 422.7795pt x 327.3831pt>
 File: Accuracy vs K.png Graphic file (type png)
 <use Accuracy vs K.png>
-Package pdftex.def Info: Accuracy vs K.png  used on input line 588.
+Package pdftex.def Info: Accuracy vs K.png  used on input line 585.
 (pdftex.def)             Requested size: 227.62204pt x 176.26471pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
 
+ []
 
-LaTeX Warning: File `roc.png' not found on input line 595.
+<ROC KNN Log.png, id=86, 507.3354pt x 505.1673pt>
+File: ROC KNN Log.png Graphic file (type png)
+<use ROC KNN Log.png>
+Package pdftex.def Info: ROC KNN Log.png  used on input line 593.
+(pdftex.def)             Requested size: 227.62204pt x 226.64485pt.
 
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:596: LaTeX Error: \begin{enumerate} on input line 511 ended by \end{soln}.
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:595: Package pdftex.def Error: File `roc.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.595 		\includegraphics[width=8cm]{roc.png}
-                                            
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l.596 	\end{soln}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:598: LaTeX Error: \begin{document} ended by \end{enumerate}.
 
-[8] [9 <./Accuracy vs K.png>] (hw3-2 - Dario Placencio.aux)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.598 \end{enumerate}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 3/hw3-2 - Dario Placencio.tex:598: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.598 \end{enumerate}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+[8 <./Accuracy vs K.png> <./ROC KNN Log.png>] (hw3-2 - Dario Placencio.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1009,17 +968,17 @@ Package rerunfilecheck Info: Checksums for `"hw3-2 - Dario Placencio".out':
 (rerunfilecheck)             After:  01183EA6EA47387D28D13B85464ACF10;300.
  ) 
 Here is how much of TeX's memory you used:
- 14390 strings out of 475248
- 225145 string characters out of 5767628
+ 14221 strings out of 475248
+ 221197 string characters out of 5767628
  1940801 words of memory out of 5000000
- 35637 multiletter control sequences out of 15000+600000
- 576808 words of font info for 81 fonts, out of 8000000 for 9000
+ 35476 multiletter control sequences out of 15000+600000
+ 575979 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,12n,67p,798b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "hw3-2 - Dario Placencio.pdf" (9 pages, 216427 bytes).
+ 63i,12n,67p,845b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on "hw3-2 - Dario Placencio.pdf" (8 pages, 281607 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
