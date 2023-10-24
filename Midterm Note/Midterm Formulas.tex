@@ -1,0 +1,332 @@
+\documentclass[a4paper,7pt]{extarticle}
+\usepackage{geometry}
+\usepackage{pdflscape}
+\usepackage{lipsum}  % to generate dummy text for the example
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{paralist}
+\usepackage{epstopdf}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyvrb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{float}
+\usepackage{paralist}
+\usepackage[svgname]{xcolor}
+\usepackage{enumerate}
+\usepackage{array}
+\usepackage{times}
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage{environ}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage{caption}
+\usepackage{multirow}
+
+\geometry{
+  left=0.5in,
+  right=0.5in,
+  top=0.5in,
+  bottom=0.5in,
+}
+
+\urlstyle{rm}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[]
+\newtheorem{conjecture}{Conjecture}[]
+\newtheorem{example}{Example}[]
+\newtheorem{theorem}{Theorem}[]
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+
+
+\floatname{algorithm}{Procedure}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\br}[1]{\{#1\}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+
+\newcommand{\vc}[1]{\boldsymbol{#1}}
+\newcommand{\xv}{\vc{x}}
+\newcommand{\Sigmav}{\vc{\Sigma}}
+\newcommand{\alphav}{\vc{\alpha}}
+\newcommand{\muv}{\vc{\mu}}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\def\x{\mathbf x}
+\def\y{\mathbf y}
+\def\w{\mathbf w}
+\def\v{\mathbf v}
+\def\E{\mathbb E}
+\def\V{\mathbb V}
+
+% TO SHOW SOLUTIONS, include following (else comment out):
+\newenvironment{soln}{
+    \leavevmode\color{blue}\ignorespaces
+}{}
+
+
+\hypersetup{
+%    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\begin{document}
+
+\section{Midterm Formulas - Dario Placencio}
+
+\subsection{Learners}
+
+\begin{tabular}{|c|c|c|}
+\hline
+Learner & Hypothesis & Preference \\
+\hline
+Nearest Neighbor & Decomposition of space & Neighbors belong to same class \\
+\hline
+Decision Tree & Single feature, Axis parallels-splits & Identified by greedy search \\
+\hline
+Linear Regression & Linear function & Minimize squared error \\
+\hline
+Logistic Regression & Hyperplane Decision Bounderies & Lasso on Ridge can be  used to prefer sparse on small weights \\
+\hline
+\end{tabular}
+
+\begin{multicols*}{2}
+
+\subsection{Concepts}
+
+\begin{itemize}
+\item Discriminative Models: Ficys on predict the labels, given features.
+\item Generative Models: Focus on now the data was generated, with probabilistic approach.
+\end{itemize}
+
+\subsection{Vector Norms}
+
+\begin{itemize}
+\item $L_1$ norm: $\|x\|_1 = \sum_{i=1}^n |x_i|$
+\item $L_2$ norm: $\|x\|_2 = \sqrt{\sum_{i=1}^n x_i^2}$
+\item $L_\infty$ norm: $\|x\|_\infty = \max_{i=1,\ldots,n} |x_i|$
+\end{itemize}
+
+\subsection{Distances}
+
+\begin{itemize}
+\item Hamming   distance: $d(x, y) = \sum_{i=1}^n \mathbb{I}(x_i \neq y_i)$
+\item Euclidean distance: $d(x, y) = \|x - y\|_2 = \sqrt{\sum_{i=1}^n (x_i - y_i)^2}$
+\item Manhattan distance: $d(x, y) = \|x - y\|_1 = \sum_{i=1}^n |x_i - y_i|$
+\end{itemize}
+
+\subsection{Probability}
+
+\begin{itemize}
+\item Mean of a random variable: $\mathbb{E}[X] = \int_{-\infty}^\infty x f(x) dx$
+\item Variance of a random variable: $\text{Var}[X] = \mathbb{E}[(X - \mathbb{E}[X])^2]$
+\item Covariance of two random variables: $\text{Cov}[X, Y] = \mathbb{E}[(X - \mathbb{E}[X])(Y - \mathbb{E}[Y])]$    
+\item $P(A \cap B) = P(A) P(B|A)$
+\item $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+\item $P(A|B) = \frac{P(A \cap B)}{P(B)}$
+\item $P(A|B) = \frac{P(B|A) P(A)}{P(B)}$
+\item $P(A|B) = \frac{P(B|A) P(A)}{P(B|A) P(A) + P(B|\bar{A}) P(\bar{A})}$
+\end{itemize}
+
+\subsection{Data Preprocessing}
+
+\begin{itemize}
+\item Standardization: $x_i \leftarrow \frac{x_i - \mu_i}{\sigma_i}$
+\item Normalization: $x_i \leftarrow \frac{x_i - \min_i x_i}{\max_i x_i - \min_i x_i}$
+\end{itemize}
+
+\subsection{Confusion Matrix}
+
+\begin{itemize}
+\item True positive: $TP = \sum_{i=1}^n \mathbb{I}(y_i = 1, \hat{y}_i = 1)$
+\item False positive: $FP = \sum_{i=1}^n \mathbb{I}(y_i = 0, \hat{y}_i = 1)$
+\item True negative: $TN = \sum_{i=1}^n \mathbb{I}(y_i = 0, \hat{y}_i = 0)$
+\item False negative: $FN = \sum_{i=1}^n \mathbb{I}(y_i = 1, \hat{y}_i = 0)$
+\item Accuracy: $\frac{TP + TN}{TP + FP + TN + FN}$
+\item Precision: $\frac{TP}{TP + FP}$
+\item Recall: $\frac{TP}{TP + FN}$
+\item False   positive rate: $\frac{FP}{FP + TN}$
+\item F1 score: $\frac{2 \cdot \text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}}$
+\item Confidence  interval: $\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p} (1 - \hat{p})}{n}}$
+\end{itemize}
+
+\subsection{Decision Trees}
+
+\begin{itemize}
+\item Entropy: $H(Y) = - \sum_{i=1}^n p_i \log_2 p_i$
+\item Joint entropy: $H(Y, X) = - \sum_{i=1}^n \sum_{j=1}^m p_{ij} \log_2 p_{ij}$
+\item Conditional entropy: $H(Y|X) = - \sum_{i=1}^n \sum_{j=1}^m p_{ij} \log_2 p_{j|i}$
+\item Mutual information: $I(Y; X) = H(Y) - H(Y|X)$
+\item Information gain: $IG(D,S) = H_D(Y) - H_D(Y|S)$ where D denotes empirical entropy and S denotes a split.
+\item Gain ratio: $GR(D,S) = \frac{IG(D,S)}{HD(S)}$ = $\frac{IG(D,S)}{-\sum_{i=1}^k \frac{|S_i|}{|S|} \log_2 \frac{|S_i|}{|S|}}$
+\end{itemize}
+
+\subsection{Linear Regression}
+
+\begin{itemize}
+\item $y = w^T x + b$
+\item $w = (X^T X)^{-1} X^T y$
+\item Gradient $w = \frac{\sum_{i=1}^n (x_i - \bar{x}) (y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2}$
+\item $b = \bar{y} - w \bar{x}$
+\item Loss function: $\mathcal{L}(w, b) = \frac{1}{n} \sum_{i=1}^n (y_i - w^T x_i - b)^2$
+\item R2 score: $1 - \frac{\sum_{i=1}^n (y_i - \hat{y}_i)^2}{\sum_{i=1}^n (y_i - \bar{y})^2}$
+\item Linear Regression as MLE, Gaussian Conditional Distribution $P(y|x) = \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \left( - \frac{(y - w^T x)^2}{2 \sigma^2} \right)$
+\end{itemize}
+
+\subsection{Ridge Regression}
+
+\begin{itemize}
+\item $w = (X^T X + \lambda I)^{-1} X^T y$
+\item $w = \frac{\sum_{i=1}^n (x_i - \bar{x}) (y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2 + \lambda}$
+\item Loss function: $\mathcal{L}(w, b) = \frac{1}{n} \sum_{i=1}^n (y_i - w^T x_i - b)^2 + \lambda \|w\|_2^2$
+\end{itemize}
+
+\subsection{Lasso Regression}
+
+\begin{itemize}
+\item $w = (X^T X + \lambda I)^{-1} X^T y$
+\item $w = \frac{\sum_{i=1}^n (x_i - \bar{x}) (y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2 + \lambda}$
+\item Loss function: $\mathcal{L}(w, b) = \frac{1}{n} \sum_{i=1}^n (y_i - w^T x_i - b)^2 + \lambda \|w\|_1$
+\end{itemize}
+
+\subsection{Polinomial Regression}
+
+\begin{itemize}
+\item $y = w_0 + w_1 x + w_2 x^2 + \cdots + w_d x^d$
+\item $y = w^T \phi(x)$
+\item $w = \frac{\sum_{i=1}^n (x_i - \bar{x}) (y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2}$
+\item Loss function: $\mathcal{L}(w, b) = \frac{1}{n} \sum_{i=1}^n (y_i - w^T \phi(x_i) - b)^2$
+\end{itemize}
+
+\subsection{Logistic Regression}
+
+\begin{itemize}
+\item $y = \sigma(w^T x + b)$
+\item Loss function: $-y \log \sigma(w^T x + b) - (1 - y) \log (1 - \sigma(w^T x + b))$
+\item $\sigma(z) = \frac{1}{1 + e^{-z}}$
+\item $\sigma'(z) = \frac{e^{-z}}{(1 + e^{-z})^2} = \frac{1}{1 + e^{-z}} \cdot \frac{e^{-z}}{1 + e^{-z}} = \sigma(z) (1 - \sigma(z))$
+\item $P(y_i|x_i) = \sigma(w^T x_i + b)^{y_i} (1 - \sigma(w^T x_i + b))^{1 - y_i}$
+
+\end{itemize}
+
+\subsection{Multiclass Logistic Regression}
+
+\begin{itemize}
+\item Softmax function: $\sigma(z)_k = \frac{e^{z_k}}{\sum_{j=1}^K e^{z_j}}$ =  $\frac{e^{w_k^T x + b_k}}{\sum_{j=1}^K e^{w_j^T x + b_j}}$
+\item Cross Entropy Loss  function: $\mathcal{L}(w, b) = - \frac{1}{n} \sum_{i=1}^n \sum_{k=1}^K \mathbb{I}(y_i = k) \log \frac{e^{w_k^T x_i + b_k}}{\sum_{j=1}^K e^{w_j^T x_i + b_j}}$ with n samples and K classes.
+\item KL Divergence:  $D_{KL}(P||Q) = E_{P}\left[\log P\right] - E_{P}\left[\log Q\right] = \sum_{i=1}^n P(i) \log \frac{P(i)}{Q(i)}$ (The last for discrete distributions)
+\end{itemize}
+
+\subsection{Gradient Descent}
+
+\begin{itemize}
+\item $w^{(t+1)} = w^{(t)} - \eta \nabla \mathcal{L}(w^{(t)})$ Where $\eta$ is the learning rate.
+\item For Linear Regression   $\nabla \mathcal{L}(w) = \frac{2}{n} X^T (X w - y)$
+\item For Logistic Regression $\nabla \mathcal{L}(w) = \frac{1}{n} X^T (\sigma(X w) - y)$
+\item For Ridge Regression    $\nabla \mathcal{L}(w) = \frac{2}{n} X^T (X w - y) + 2 \lambda w$
+\item For Lasso Regression    $\nabla \mathcal{L}(w) = \frac{2}{n} X^T (X w - y) + \lambda \text{sign}(w)$
+\item For Polinomial Regression $\nabla \mathcal{L}(w) = \frac{2}{n} \Phi^T (\Phi w - y)$
+\item Stochastic gradient descent: $w^{(t+1)} = w^{(t)} - \eta \nabla \mathcal{L}(w^{(t)}, x_i, y_i)$
+\item Lipschitzness     $\|\nabla \mathcal{L}(w) - \nabla \mathcal{L}(w')\|_2 \leq L \|w - w'\|_2$ 
+
+\subsection{Maximum Likelihood Estimation}
+
+\begin{itemize}
+\item \( P(y|x) = \prod_{i=1}^n P(y_i|x_i) \)
+\item \( \log P(y|x) = \sum_{i=1}^n \log P(y_i|x_i) \)
+\item \( \log P(y|x) = \sum_{i=1}^n [ y_i \log \sigma(w^T x_i + b) + (1 - y_i) \log(1 - \sigma(w^T x_i + b)) ] \)
+\end{itemize}
+
+\subsection{Maximum Posterior Estimation}
+
+\begin{itemize}
+\item Goal: Find parameter \( \theta \) that maximizes the posterior \( P(\theta|y,x) \).
+\item Formula: \( \hat{\theta}_{MAP} = \arg\max_{\theta} P(y|x; \theta) P(\theta) \).
+\item Combines likelihood \( P(y|x; \theta) \) with prior \( P(\theta) \).
+\item Different with MLE is the priori
+\end{itemize}
+
+\subsection{Naïve Bayes}
+
+\begin{itemize}
+\item Assumes independence of variables
+\item \( P(X, Y) = P(Y) \prod_{i=1}^d P(X_i|Y) \)
+\item Prediction  \( \hat{y} = \arg\max_Y P(Y|X) \)
+\item Bernoulli   \( P(x_i|y) = \theta_{i|y}^{x_i} (1 - \theta_{i|y})^{1 - x_i} \)
+\item Multinomial \( P(x_i|y) = \frac{N_{i|y}^{x_i}}{\sum_{j=1}^d N_{j|y}} \)
+\item Gaussian    \( P(x_i|y) = \frac{1}{\sqrt{2 \pi \sigma_{i|y}^2}} \exp \left( - \frac{(x_i - \mu_{i|y})^2}{2 \sigma_{i|y}^2} \right) \)
+\item Smoothing   \( P(x_i|y) = \frac{N_{i|y} + \alpha}{\sum_{j=1}^d N_{j|y} + \alpha d} \)
+\end{itemize}
+
+\subsection{Neural Networks}
+
+\begin{itemize}
+\item Perceptron: \( y = \sigma(w^T x + b) \)
+\item Likelihood of Output: \( P(y_i = 1|x_i) = \sigma(w^T x_i + b) \)
+\item Perceptron Update Rule: \( W_{t+1} = W_t + \eta(y_i - \hat{y}_i) x_i \)
+\item Gradient Computation: \( \nabla = \frac{\partial \mathcal{L}}{\partial w} = \frac{\partial \mathcal{L}}{\partial \hat{y}} \frac{\partial \hat{y}}{\partial w} \)
+
+\subsubsection{Activation Functions}
+\item Threshold: \( f(x) = \mathbb{I}(x > 0) \)
+\item Sigmoid: \( f(x) = \frac{1}{1 + e^{-x}} \)
+\item Tanh: \( f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} \)
+\item Relu: \( f(x) = \max(0, x) \)
+
+\subsubsection{Regularization}
+\item Weight Decay: \( \mathcal{L}(w) = \frac{1}{n} \sum_{i=1}^n (y_i - \sigma(w^T x_i + b))^2 + \lambda \|w\|_2^2 \)
+\item Dropout: \( P(\text{keep}) = 1 - p \)
+
+\subsubsection{Derivatives}
+\item Sigmoid: \( \sigma'(z) = \sigma(z) (1 - \sigma(z)) \)
+\item Tanh: \( \tanh'(z) = 1 - \tanh^2(z) \)
+\item Relu: \( \text{relu}'(z) = \mathbb{I}(z > 0) \)
+\end{itemize}
+
+\subsection{Data Augmentation}
+
+\begin{itemize}
+\item Transform and add new samples to data set.
+\item Images: Crop, Color, Rotations
+\item Text: Substitution, Bach Translation
+\item Adding Noise to pick a solution.
+\item Early stopping with validation printing.
+\item Droput probability of weight in testing.
+\item Convolution to reduce number of parameters.
+\item Padding to preserve edge information.
+\end{itemize}
+
+
+\end{multicols*}
+
+\end{document}
