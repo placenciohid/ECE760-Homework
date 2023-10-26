@@ -290,7 +290,66 @@ L(x, y) = -\sum_{i=1}^k y \text{log}(\hat{y})
 \]
 
 \begin{enumerate}
-    \item Derive backpropagation updates for the above neural network. (5 pts)
+    \item Derive backpropagation updates for the above neural network. (5 pts)\\
+    
+    \begin{soln}
+        Given:
+
+        \[
+        \hat{y} = f(x) = g(W_2\sigma(W_1x))
+        \]
+        
+        Where:
+        \( \sigma(z) = \frac{1}{1 + e^{-z}} \) is the sigmoid activation function.
+        \( g(z_i) = \frac{e^{z_i}}{\sum_{j=1}^k e^{z_j}} \) is the softmax function.
+        Loss function \( L(x, y) = -\sum_{i=1}^k y_i \text{log}(\hat{y}_i) \).
+        
+        ### Forward Pass:
+        
+        1. Compute the input to the hidden layer:
+        \[
+        a_1 = W_1x
+        \]
+        2. Compute the output of the hidden layer:
+        \[
+        h = \sigma(a_1)
+        \]
+        3. Compute the input to the output layer:
+        \[
+        a_2 = W_2h
+        \]
+        4. Compute the output of the network:
+        \[
+        \hat{y} = g(a_2)
+        \]
+        
+        ### Backward Pass:
+        
+        1. Gradient of the loss with respect to the output:
+        \[
+        \frac{\partial L}{\partial \hat{y}_i} = -\frac{y_i}{\hat{y}_i}
+        \]
+        2. Gradient of the loss with respect to \( a_2 \) (input of softmax):
+        \[
+        \frac{\partial L}{\partial a_2} = \hat{y} - y
+        \]
+        3. Gradient of the loss with respect to \( W_2 \):
+        \[
+        \frac{\partial L}{\partial W_2} = \frac{\partial L}{\partial a_2} h^T
+        \]
+        4. Gradient of the loss with respect to \( h \):
+        \[
+        \frac{\partial L}{\partial h} = W_2^T \frac{\partial L}{\partial a_2}
+        \]
+        5. Gradient of the loss with respect to \( a_1 \) (input of sigmoid):
+        \[
+        \frac{\partial L}{\partial a_1} = \frac{\partial L}{\partial h} \cdot h \cdot (1-h)
+        \]
+        6. Gradient of the loss with respect to \( W_1 \):
+        \[
+        \frac{\partial L}{\partial W_1} = \frac{\partial L}{\partial a_1} x^T
+        \]
+    \end{soln}
     \item Implement it in NumPy or PyTorch using basic linear algebra operations. (e.g. You are not allowed to use auto-grad, built-in optimizer, model, etc. in this step. You can use library functions for data loading, processing, etc.). Evaluate your implementation on MNIST dataset, report test errors and learning curve. (10 pts)
     \item Implement the same network in PyTorch (or any other framework). You can use all the features of the framework e.g. auto-grad etc. Evaluate it on MNIST dataset, report test errors, and learning curve. (2 pts)
     \item Try different weight initialization a) all weights initialized to 0, and b) initialize the weights randomly between -1 and 1. Report test error and learning curves for both. (You can use either of the implementations) (3 pts)

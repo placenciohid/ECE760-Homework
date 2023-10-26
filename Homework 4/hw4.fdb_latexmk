@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1698125005 "c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 4/hw4.tex" "hw4.pdf" "hw4" 1698125006 0
+["pdflatex"] 1698278830 "c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 4/hw4.tex" "hw4.pdf" "hw4" 1698278832 2
   "C:/Users/dario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1698117478 82882 2640283f6b61768106a3a0860c97cda0 ""
   "C:/Users/dario/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk" 1698117484 6984 b682e362d471ffd5fc3ec3c2b0518303 ""
   "C:/Users/dario/AppData/Local/MiKTeX/fonts/tfm/public/bbm/bbm10.tfm" 1698117481 560 39fd35b5e4a6aca3672660cc548ba860 ""
@@ -132,10 +132,10 @@
   "C:/Users/dario/AppData/Roaming/MiKTeX/tex/latex/psnfss/times.sty" 1585926771 888 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
   "C:/Users/dario/AppData/Roaming/MiKTeX/tex/latex/refcount/refcount.sty" 1576437552 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/dario/AppData/Roaming/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
-  "c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 4/hw4.tex" 1698125004 13712 c7dbf9f97e4dfc3528006f58cb3c0c4b ""
-  "hw4.aux" 1698125006 1152 38351ab7a72c5fcef2953a2d2bac48c9 "pdflatex"
-  "hw4.out" 1698125006 1220 43f568e1c634151e6a708d9f1ec6215a "pdflatex"
-  "hw4.tex" 1698125004 13712 c7dbf9f97e4dfc3528006f58cb3c0c4b ""
+  "c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 4/hw4.tex" 1698187884 15539 358a9724bfcb6248e8bb29cbbe5e913d ""
+  "hw4.aux" 1698278832 1152 38351ab7a72c5fcef2953a2d2bac48c9 "pdflatex"
+  "hw4.out" 1698278832 1220 43f568e1c634151e6a708d9f1ec6215a "pdflatex"
+  "hw4.tex" 1698187884 15539 358a9724bfcb6248e8bb29cbbe5e913d ""
   (generated)
   "hw4.aux"
   "hw4.log"

@@ -181,14 +181,8 @@ OUTPUT hw4.aux
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT .\hw4.out
-INPUT .\hw4.out
-INPUT hw4.out
-INPUT hw4.out
-OUTPUT hw4.pdf
-INPUT .\hw4.out
-INPUT .\hw4.out
 OUTPUT hw4.out
+OUTPUT hw4.pdf
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmrc7t.tfm
 INPUT C:\Users\dario\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
