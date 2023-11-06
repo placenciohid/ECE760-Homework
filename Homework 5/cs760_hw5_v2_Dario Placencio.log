@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.15)  3 NOV 2023 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.15)  6 NOV 2023 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -495,7 +495,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 \c@lemma=\count320
 \c@proposition=\count321
 \c@corollary=\count322
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 190.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 189.
  (C:\Users\dario\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\dario\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -505,24 +505,24 @@ File: l3backend-pdftex.def 2023-10-10 L3 backend support: PDF output (pdfTeX)
 ) (cs760_hw5_v2_Dario Placencio.aux)
 \openout1 = `"cs760_hw5_v2_Dario Placencio.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -572,25 +572,29 @@ LaTeX Font Info:    ... okay on input line 190.
 \makeMPintoPDFobject=\count329
 \everyMPtoPDFconversion=\toks39
 )
-Package hyperref Info: Link coloring OFF on input line 190.
+Package hyperref Info: Link coloring OFF on input line 189.
 \@outlinefile=\write5
 \openout5 = `"cs760_hw5_v2_Dario Placencio.out"'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 193.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 192.
  (C:\Users\dario\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 193.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 192.
  (C:\Users\dario\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 214.
- (C:\Users\dario\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
+Overfull \hbox (2.20946pt too wide) in paragraph at lines 198--201
+[][][]$\OT1/ptm/m/n/10 github . com / placenciohid / ECE760-[]Homework / blob / 7d85d1f10513b5c067245046def39fc576b86cde / Homework %
+ []
+
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 213.
+(C:\Users\dario\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
 
  []
 
@@ -598,29 +602,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
 {C:/Users/dario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 5/cs760_hw5_v2_Dario Placencio.tex:265: Package amsmath Error: \begin{aligned} allowed only in math mode.
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 5/cs760_hw5_v2_Dario Placencio.tex:264: Package amsmath Error: \begin{aligned} allowed only in math mode.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.265 &
+l.264 &
         \text{Let } J^{(t)} \text{ be the objective function value at iterat...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 5/cs760_hw5_v2_Dario Placencio.tex:265: Missing $ inserted.
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 5/cs760_hw5_v2_Dario Placencio.tex:264: Missing $ inserted.
 <inserted text> 
                 $
-l.265 &
+l.264 &
         \text{Let } J^{(t)} \text{ be the objective function value at iterat...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 5/cs760_hw5_v2_Dario Placencio.tex:274: Missing $ inserted.
+c:/Users/dario/OneDrive/Documents/GitHub/ECE760-Homework/Homework 5/cs760_hw5_v2_Dario Placencio.tex:273: Missing $ inserted.
 <inserted text> 
                 $
-l.274 \end{aligned}
+l.273 \end{aligned}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -629,46 +633,46 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (47.00514pt too wide) in paragraph at lines 263--276
+Overfull \hbox (47.00514pt too wide) in paragraph at lines 262--275
 [][][]$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--317
+Underfull \hbox (badness 10000) in paragraph at lines 314--316
 
  []
 
 
-LaTeX Warning: Reference `eqn:kmeans' on page 2 undefined on input line 320.
+LaTeX Warning: Reference `eqn:kmeans' on page 2 undefined on input line 319.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--321
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 325.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 324.
 (C:\Users\dario\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-LaTeX Warning: Reference `eqn:kmeans' on page 2 undefined on input line 326.
+LaTeX Warning: Reference `eqn:kmeans' on page 2 undefined on input line 325.
 
 [2]
 
-LaTeX Warning: Reference `eqn:dimobj' on page 3 undefined on input line 431.
+LaTeX Warning: Reference `eqn:dimobj' on page 3 undefined on input line 430.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 442--444
+Underfull \hbox (badness 10000) in paragraph at lines 441--443
 
  []
 
 
-Overfull \hbox (5.88748pt too wide) in paragraph at lines 474--476
+Overfull \hbox (5.88748pt too wide) in paragraph at lines 473--475
 []\OT1/ptm/m/n/10 Thus, the ob-jec-tive value re-mains un-changed un-der the trans-for-ma-tion us-ing $\OML/cmm/m/it/10 M$ \OT1/ptm/m/n/10 and $\OML/cmm/m/it/10 p$\OT1/ptm/m/n/10 , show-ing that $\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]; b[]; Z[]\OT1/cmr/m/n/10 ) =
  []
 
 [4]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 559.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 558.
  (C:\Users\dario\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [5]
@@ -679,20 +683,20 @@ Package epstopdf Info: Source file: <buggy_pca.eps>
 (epstopdf)                    date: 2023-11-02 15:55:16
 (epstopdf)                    size: 10268 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=buggy_pca-eps-converted-to.pdf buggy_pca.eps>
-(epstopdf)             \includegraphics on input line 612.
+(epstopdf)             \includegraphics on input line 611.
 Package epstopdf Info: Output file is already uptodate.
-<buggy_pca-eps-converted-to.pdf, id=67, 562.1pt x 421.575pt>
+<buggy_pca-eps-converted-to.pdf, id=69, 562.1pt x 421.575pt>
 File: buggy_pca-eps-converted-to.pdf Graphic file (type pdf)
 <use buggy_pca-eps-converted-to.pdf>
-Package pdftex.def Info: buggy_pca-eps-converted-to.pdf  used on input line 612.
+Package pdftex.def Info: buggy_pca-eps-converted-to.pdf  used on input line 611.
 (pdftex.def)             Requested size: 216.81pt x 162.60599pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--614
+Underfull \hbox (badness 10000) in paragraph at lines 609--613
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
 
  []
 
@@ -718,17 +722,17 @@ Package rerunfilecheck Info: Checksums for `"cs760_hw5_v2_Dario Placencio".out':
 (rerunfilecheck)             After:  B9012373CC9197F1230F621548131831;1500.
  ) 
 Here is how much of TeX's memory you used:
- 14368 strings out of 474824
- 225767 string characters out of 5750976
+ 14370 strings out of 474824
+ 225789 string characters out of 5750976
  1944043 words of memory out of 5000000
- 36036 multiletter control sequences out of 15000+600000
+ 36038 multiletter control sequences out of 15000+600000
  582204 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,12n,67p,726b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,12n,67p,726b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\dario\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm10.pk><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/dario/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "cs760_hw5_v2_Dario Placencio.pdf" (6 pages, 210701 bytes).
+Output written on "cs760_hw5_v2_Dario Placencio.pdf" (6 pages, 212516 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
+ 162 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
